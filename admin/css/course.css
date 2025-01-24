@@ -1,0 +1,88 @@
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f7fc;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 20px auto;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .card {
+        background-color: #fff;
+        padding: 30px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    .card-title {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .course-form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .course-form label {
+        font-size: 16px;
+        font-weight: 600;
+        color: #555;
+    }
+
+    .input-field {
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        width: 100%;
+    }
+
+    .submit-btn {
+        padding: 12px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+    }
+
+    .submit-btn:hover {
+        background-color: #45a049;
+    }
+
+    .back-btn-container {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .back-btn {
+        padding: 12px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 16px;
+        transition: background-color 0.3s;
+    }
+
+    .back-btn:hover {
+        background-color: #0056b3;
+    }
+

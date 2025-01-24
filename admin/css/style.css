@@ -1,0 +1,261 @@
+/* styles.css - All the CSS for styling */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+
+.navbar {
+    background-color: #0047AB;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 250px; /* Left margin for desktop */
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    background: #333;
+    color: #fff;
+    padding-top: 20px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    z-index: 900;
+    overflow-y: auto;
+    transition: all 0.3s ease;
+}
+
+.sidebar .logo {
+    width: 80%; /* Adjust size as necessary */
+    max-width: 150px; /* Ensure it doesn't become too large */
+    margin-bottom: 20px;
+    object-fit: contain; /* Ensures the logo scales properly */
+    display: block; /* Ensures the image is treated as a block element */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sidebar h1 {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 0 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+.sidebar ul li a i {
+    margin-right: 15px;
+}
+
+.sidebar .logout {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.sidebar .logout a {
+    color: #fff;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar .logout a:hover {
+    background-color: #dc3545;
+    border-radius: 5px;
+}
+.main-content {
+    margin-left: 270px; /* Adjusted for sidebar width */
+    flex-grow: 1;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    width:fit-content;
+    padding: 20px;
+  
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.card h3 {
+    margin: 0 0 10px 0;
+}
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+.styled-table thead {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.styled-table th, .styled-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.styled-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.styled-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.styled-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.styled-table td a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.styled-table td a:hover {
+    text-decoration: underline;
+}
+
+.progress {
+    background-color: #ddd;
+    border-radius: 5px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: #0047AB;
+    width: 70%; /* Adjust based on progress */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #0047AB;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Media Query for Screens Smaller than 768px */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 0; /* Remove left margin for mobile */
+    }
+
+    .navbar a {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+        position: relative;
+        height: auto;
+    }
+
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+/* Media Query for Screens Smaller than 480px */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+}
